@@ -1,8 +1,8 @@
 cd yeek-fetch-new
 git pull
 yarn
-export PATH='$(yarn global bin):$PATH'
-pm2 start fakeIndex.js
+# export PATH='$(yarn global bin):$PATH'
+/home/ubuntu/.yarn/bin/pm2 start fakeIndex.js
 
 INSTANCE_ID=`ec2metadata --instance-id`
 INSTANCE_TYPE=`ec2metadata --instance-type`
