@@ -2,6 +2,7 @@ sudo apt-get update && sudo apt-get upgrade -y linux-aws
 cd yeek-fetch-new
 git pull
 yarn
+yan global add pm2
 # export PATH='$(yarn global bin):$PATH'
 /home/ubuntu/.yarn/bin/pm2 start fakeIndex.js
 
