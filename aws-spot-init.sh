@@ -1,3 +1,4 @@
+sudo apt-get update && sudo apt-get upgrade -y linux-aws
 cd yeek-fetch-new
 git pull
 yarn
