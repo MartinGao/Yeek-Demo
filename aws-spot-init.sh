@@ -12,3 +12,5 @@ LOCAL_IP=`ec2metadata --local-ipv4`
 PUBLIC_IP=`ec2metadata --public-ipv4`
 AMI_ID=`ec2metadata --ami-id`
 wget -qO- "http://52.52.177.194:3008/ip/create?instanceId=$INSTANCE_ID&instanceType=$INSTANCE_TYPE&localIp=$LOCAL_IP&publicIp=$PUBLIC_IP&amiId=$AMI_ID&yeek=Yeek-Fetch-New"
+
+cat /var/log/cloud-init-output.log
